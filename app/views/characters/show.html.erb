@@ -1,0 +1,16 @@
+<h1><%= @character.name %></h1>
+
+ <%= image_tag @character.image, :class => 'feature', :alt => @character.name if @character.image.present? %>
+ <ul>
+ <li>Name: <%= @character.name %></li>
+ <li>Race: <%= @character.race %></li>
+ <li>Voice Actor: <%= @character.voice_actor_id %></li>
+ <li>Saga: <%= @character.saga_id %></li>
+ <li>Signature Move: <%= @character.signature_move %></li>
+ <li>Good or Evil: <%= @character.good_or_evil %></li>
+ </ul>
+
+<div class="controls">
+    <%= link_to 'Edit character', edit_character_path(@character) %>
+    <%= button_to 'Delete character', @character, :method => 'delete' %>
+</div>    

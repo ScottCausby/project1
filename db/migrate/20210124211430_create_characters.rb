@@ -3,10 +3,10 @@ class CreateCharacters < ActiveRecord::Migration[5.2]
     create_table :characters do |t|
       t.text :name
       t.text :race
-      t.text :voice_actor
-      t.text :saga
+      t.integer :voice_actor_id
+      t.integer :saga_id
       t.text :signature_move
-      t.text :good_or_bad
+      t.text :good_or_evil
       t.text :image
 
       t.timestamps

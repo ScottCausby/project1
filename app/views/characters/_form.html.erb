@@ -1,0 +1,27 @@
+
+<%= form_for @character do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, :autofocus => true, :required => true %>
+
+<%= f.label :race %>
+<%= f.text_field :race %>
+
+<%= f.label :voice_actor %>
+<%= f.text_field :voice_actor %>
+
+<%= f.label :saga_id %>
+<%= f.text_field :saga_id %>
+
+<%= f.label :signature_move %>
+<%= f.text_field :signature_move %>
+
+<%= f.label :good_or_evil %>
+<%= f.text_field :good_or_evil %>
+
+<%= f.label :image %>
+<%= f.url_field :image %>
+
+<%= f.submit %>
+
+
+<% end %>

@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 2021_01_24_220455) do
   create_table "characters", force: :cascade do |t|
     t.text "name"
     t.text "race"
-    t.text "voice_actor"
-    t.text "saga"
+    t.integer "voice_actor_id"
+    t.integer "saga_id"
     t.text "signature_move"
-    t.text "good_or_bad"
+    t.text "good_or_evil"
     t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 2021_01_24_220455) do
 
   create_table "voice_actors", force: :cascade do |t|
     t.text "name"
-    t.string "nationality"
-    t.text "characters"
+    t.text "nationality"
+    t.integer "characters_id"
     t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
