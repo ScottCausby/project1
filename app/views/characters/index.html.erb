@@ -5,8 +5,12 @@
  <ul>
  <li>Name: <%=  link_to character.name, character %></li>
  <li>Race: <%= character.race %></li>
- <li>Voice Actor: <%= character.voice_actor_id %></li>
- <li>Saga: <%= character.saga_id %></li>
+ <li>Voice Actor: <%= character.voice_actor.name %></li>
+ <li>Sagas: 
+ <% character.sagas.each do |saga| %>
+ <%= saga.title %>
+ <% end %>
+ </li>
  <li>Signature Move: <%= character.signature_move %></li>
  <li>Good or Evil: <%= character.good_or_evil %></li>
  </ul>
