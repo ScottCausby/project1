@@ -6,11 +6,11 @@
 <%= f.label :race %>
 <%= f.text_field :race %>
 
-<%= f.label :voice_actor %>
-<%= f.text_field :voice_actor %>
+<%= f.label :voice_actor_id %>
+<%= f.select :voice_actor_id, VoiceActor.pluck(:name, :id) %>
 
 <%= f.label :saga_id %>
-<%= f.text_field :saga_id %>
+<%= f.select :saga_id, Saga.pluck(:title, :id) %>
 
 <%= f.label :signature_move %>
 <%= f.text_field :signature_move %>

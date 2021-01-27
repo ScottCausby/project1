@@ -5,6 +5,8 @@ class CharactersController < ApplicationController
 
   def new
     @character = Character.new
+    @voice_actor = VoiceActor.all
+
   end
 
   def create
@@ -34,6 +36,6 @@ class CharactersController < ApplicationController
 
   private
   def character_params
-    params.require(:character).permit(:name, :race, :voice_actor, :saga_id, :signature_move, :good_or_evil, :image)
+    params.require(:character).permit(:name, :race, :voice_actor_id, :saga_id, :signature_move, :good_or_evil, :image)
   end
 end

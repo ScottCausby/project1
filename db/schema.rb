@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 2021_01_24_220455) do
   create_table "voice_actors", force: :cascade do |t|
     t.text "name"
     t.text "nationality"
-    t.integer "characters_id"
     t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
