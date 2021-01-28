@@ -4,6 +4,12 @@
  <ul>
  <li>Name: <%= @voice_actor.name %></li>
  <li>Race: <%= @voice_actor.nationality %></li>
+ <li>Characters:</li>
+ </ul>
+
+ <% @voice_actor.characters.each do |character| %>
+    <%= link_to image_tag(character.image, :class => 'thumb'), character %>
+<% end %>    
 
 <div class="controls">
     <%= link_to 'Edit Voice Actor', edit_voice_actor_path(@voice_actor) %>

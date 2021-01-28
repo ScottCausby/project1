@@ -4,7 +4,9 @@
  <ul>
  <li>Name: <%= @character.name %></li>
  <li>Race: <%= @character.race %></li>
- <li>Voice Actor: <%= @character.voice_actor.try :name %></li>
+ <% if @character.voice_actor.present? %>
+ <li>Voice Actor: <%= link_to @character.voice_actor.name, @character.voice_actor %></li>
+ <% end %>
  <li>Sagas: <%= @character.sagas.map(&:title).join ", " %></li>
  <li>Signature Move: <%= @character.signature_move %></li>
  <li>Good or Evil: <%= @character.good_or_evil %></li>

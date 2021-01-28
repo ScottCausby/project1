@@ -8,7 +8,7 @@ class SagasController < ApplicationController
     end
   
     def create
-      saga = Saga.create sagas_params
+      saga = Saga.create saga_params
       redirect_to saga
     end
   
@@ -29,7 +29,7 @@ class SagasController < ApplicationController
     def destroy
       saga = Saga.find params[:id]
       saga.destroy
-      redirect_to saga_path
+      redirect_to sagas_path
     end
   
     private
