@@ -7,10 +7,10 @@
 <%= f.text_field :race %>
 
 <%= f.label :voice_actor_id %>
-<%= f.select :voice_actor_id, VoiceActor.pluck(:name, :id) %>
+<%= f.select :voice_actor_id, VoiceActor.pluck(:name, :id), :include_blank => true %>
 
-<%= f.label :saga_id %>
-<%= f.select :saga_id, Saga.pluck(:title, :id) %>
+<%= f.label :saga_ids %>
+<%= f.select :saga_ids, Saga.pluck(:title, :id) %>
 
 <%= f.label :signature_move %>
 <%= f.text_field :signature_move %>

@@ -1,0 +1,11 @@
+<h1><%= @voice_actor.name %></h1>
+
+ <%= image_tag @voice_actor.image, :class => 'feature', :alt => @voice_actor.name if @voice_actor.image.present? %>
+ <ul>
+ <li>Name: <%= @voice_actor.name %></li>
+ <li>Race: <%= @voice_actor.nationality %></li>
+
+<div class="controls">
+    <%= link_to 'Edit Voice Actor', edit_voice_actor_path(@voice_actor) %>
+    <%= button_to 'Delete Voice Actor', @voice_actor, :method => 'delete' %>
+</div> 

@@ -1,0 +1,15 @@
+
+<%= form_for @saga do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title, :autofocus => true, :required => true %>
+
+<%= f.label :episodes %>
+<%= f.text_field :episodes %>
+
+<%= f.label :synopsis %>
+<%= f.text_field :synopsis %>
+
+<%= f.submit %>
+
+
+<% end %>

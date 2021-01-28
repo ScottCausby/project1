@@ -3,7 +3,7 @@ c1 = Character.create :name => 'Goku', :race => 'Saiyan', :signature_move => 'Ka
 c2 = Character.create :name => 'Vegeta', :race => 'Saiyan', :signature_move => 'Final Flash', :good_or_evil => 'Evil then Good', :image => 'https://i.pinimg.com/originals/54/90/76/54907636d296544cde5c81d9a41e2553.jpg'
 c3 = Character.create :name => 'Gohan', :race => 'Saiyan/Human', :signature_move => 'Masenko', :good_or_evil => 'Good', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ93XF1s4s8uL8zLw_Izn27RT5HGgqXraFTKg&usqp=CAU'
 c4 = Character.create :name => 'Piccolo', :race => 'Namekian', :signature_move => 'Special Beam Cannon', :good_or_evil => 'Evil then Good', :image => 'https://i.pinimg.com/736x/0c/21/4f/0c214f79409eaae72a9da9ecf319e5a0.jpg'
-c5 = Character.create :name => 'Frieza', :race => 'Changeling', :signature_move => 'Death Comet', :good_or_evil => 'Evil', :image => 'https://static.wikia.nocookie.net/villains/images/5/5d/Frieza.png/revision/latest?cb=20200625063534'
+c5 = Character.create :name => 'Frieza', :race => 'Changeling', :signature_move => 'Death Comet', :good_or_evil => 'Evil', :image => 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/820ad535-c310-4704-a9bc-eecf26bba444/db300c5-2b31970a-1232-49fb-a0f0-0bc98afa7a61.png/v1/fill/w_1024,h_1220,strp/frieza_by_alexelz_db300c5-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMjIwIiwicGF0aCI6IlwvZlwvODIwYWQ1MzUtYzMxMC00NzA0LWE5YmMtZWVjZjI2YmJhNDQ0XC9kYjMwMGM1LTJiMzE5NzBhLTEyMzItNDlmYi1hMGYwLTBiYzk4YWZhN2E2MS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.PbRC5jU0pFnGgrreDvGVFYoKru7vii1r76bj2tPL4Yo'
 puts "#{Character.count} characters."
 
 

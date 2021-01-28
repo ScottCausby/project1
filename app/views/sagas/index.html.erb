@@ -1,0 +1,9 @@
+<h1>Sagas</h1>
+
+<% @sagas.each do |saga| %>
+ <ul>
+ <li>Name: <%=  link_to saga.title, saga %></li>
+ <li>Episodes: <%= saga.episodes %></li>
+ <li>Synopsis: <%= saga.synopsis %>
+ </ul>
+<% end%>

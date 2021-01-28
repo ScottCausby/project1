@@ -1,6 +1,9 @@
 body {
-    background: url(background.jpg);
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: whitesmoke;
+
 }
 
 .thumb {

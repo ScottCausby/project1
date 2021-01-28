@@ -1,0 +1,12 @@
+<h1><%= @saga.title %></h1>
+
+ <ul>
+ <li>Title: <%= @saga.title %></li>
+ <li>Episodes: <%= @saga.episodes%></li>
+ <li>Synopsis: <%= @saga.synopsis %></li>
+ </ul>
+
+<div class="controls">
+    <%= link_to 'Edit saga', edit_saga_path(@saga) %>
+    <%= button_to 'Delete saga', @saga, :method => 'delete' %>
+</div>    

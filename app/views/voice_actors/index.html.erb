@@ -1,0 +1,14 @@
+<h1>Voice Actors</h1>
+
+<% @voice_actors.each do |voice_actor| %>
+ <%= image_tag voice_actor.image, :class => 'thumb', :alt => voice_actor.name if voice_actor.image.present? %>
+ <ul>
+ <li>Name: <%=  link_to voice_actor.name, voice_actor %></li>
+ <li>Nationality: <%= voice_actor.nationality %></li>
+ <li>Characters: 
+ <% voice_actor.characters.each do |character| %>
+ <%= character.name %>
+ <% end %>
+ </li>
+ </ul>
+<% end%>
