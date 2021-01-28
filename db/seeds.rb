@@ -10,7 +10,7 @@ puts "#{Character.count} characters."
 VoiceActor.destroy_all
 a1 = VoiceActor.create :name => 'Sean Schemmel', :nationality => 'American', :image => 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sean_Schemmel_by_Gage_Skidmore.jpg/440px-Sean_Schemmel_by_Gage_Skidmore.jpg'
 a2 = VoiceActor.create :name => 'Christopher Sabat', :nationality => 'American', :image => 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Christopher_Sabat_%2849644852593%29.jpg/440px-Christopher_Sabat_%2849644852593%29.jpg'
-a3 = VoiceActor.create :name => 'Stephanie Nadolny', :nationality => 'American', :image => 'https://static.wikia.nocookie.net/dragonball/images/c/cf/Stephanie_Nadolny.jpg/revision/latest/top-crop/width/360/height/450?cb=20121215171236'
+a3 = VoiceActor.create :name => 'Stephanie Nadolny', :nationality => 'American', :image => 'https://m.media-amazon.com/images/M/MV5BMzk5NzdhZjItMzk2Ny00NzhhLThjZDAtNmI0YmU1ZGVjODU0XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UY1200_CR90,0,630,1200_AL_.jpg'
 a4 = VoiceActor.create :name => 'Linda Young', :nationality => 'American', :image => 'https://img1.wsimg.com/isteam/ip/f3906b82-a192-4427-8fc4-f55c7327658f/Linda-Young-4.jpg'
 puts "#{VoiceActor.count} voice actors."
 
