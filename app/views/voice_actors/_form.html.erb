@@ -1,18 +1,26 @@
 
 <%= form_for @voice_actor do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name, :autofocus => true, :required => true %>
+    <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, :autofocus => true, :required => true %>
+    </div> 
 
-<%= f.label :nationality %>
-<%= f.text_field :nationality %>
+    <div class="form-group">
+        <%= f.label :nationality %>
+        <%= f.text_field :nationality %>
+    </div>  
 
-<%= f.label :character_ids %>
-<%= f.select :character_ids, Character.pluck(:name, :id), :include_blank => true %>
+    <div class="form-group">
+        <%= f.label :character_ids %>
+        <%= f.select :character_ids, Character.pluck(:name, :id), :include_blank => true %>
+    </div> 
 
-<%= f.label :image %>
-<%= f.url_field :image %>
+    <div class="form-group">
+        <%= f.label :image %>
+        <%= f.url_field :image %>
+    </div>    
 
-<%= f.submit %>
+<%= f.submit "Create Voice Actor", :class => 'btn btn-warning' %>
 
 
 <% end %>

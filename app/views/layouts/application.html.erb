@@ -5,19 +5,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-  <nav>
-  <%= link_to 'All characters', characters_path %>
-  <%= link_to 'New characters', new_character_path %>
-  <%= link_to 'All voice actors', voice_actors_path %>
-  <%= link_to 'New voice actors', new_voice_actor_path %>
-  <%= link_to 'All sagas', sagas_path %>
-  <%= link_to 'New sagas', new_saga_path %>
-  </nav>
-    <%= yield %>
+
+    <div class="container">
+      <nav>
+        <%= link_to 'All characters', characters_path %>
+        <%= link_to 'New characters', new_character_path %>
+        <%= link_to 'All voice actors', voice_actors_path %>
+        <%= link_to 'New voice actors', new_voice_actor_path %>
+        <%= link_to 'All sagas', sagas_path %>
+        <%= link_to 'New sagas', new_saga_path %>
+      </nav>
+      <%= yield %>
+    </div>  
   </body>
 </html>

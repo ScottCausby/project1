@@ -1,27 +1,41 @@
 
 <%= form_for @character do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name, :autofocus => true, :required => true %>
+    <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, :autofocus => true, :required => true, :class => 'form-control' %>
+    </div>
 
-<%= f.label :race %>
-<%= f.text_field :race %>
+    <div class="form-group">
+        <%= f.label :race %>
+        <%= f.text_field :race %>
+    </div>
 
-<%= f.label :voice_actor_id %>
-<%= f.select :voice_actor_id, VoiceActor.pluck(:name, :id), :include_blank => true %>
+    <div class="form-group">
+        <%= f.label :voice_actor_id %>
+        <%= f.select :voice_actor_id, VoiceActor.pluck(:name, :id), :include_blank => true, :class => 'form-control' %>
+    </div>
 
-<%= f.label :saga_ids %>
-<%= f.select :saga_ids, Saga.pluck(:title, :id) %>
+    <div class="form-group">
+        <%= f.label :saga_ids %>
+        <%= f.select :saga_ids, Saga.pluck(:title, :id), :class => 'form-control' %>
+    </div>
 
-<%= f.label :signature_move %>
-<%= f.text_field :signature_move %>
+    <div class="form-group">    
+        <%= f.label :signature_move %>
+        <%= f.text_field :signature_move, :class => 'form-control' %>
+    </div>
 
-<%= f.label :good_or_evil %>
-<%= f.text_field :good_or_evil %>
+    <div class="form-group">
+        <%= f.label :good_or_evil %>
+        <%= f.text_field :good_or_evil, :class => 'form-control' %>
+    </div>
 
-<%= f.label :image %>
-<%= f.url_field :image %>
+    <div class="form-group">
+        <%= f.label :image %>
+        <%= f.url_field :image, :class => 'form-control' %>
+    </div>
 
-<%= f.submit %>
+    <%= f.submit :class => 'btn btn-warning' %>
 
 
 <% end %>

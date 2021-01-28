@@ -1,15 +1,21 @@
 
 <%= form_for @saga do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title, :autofocus => true, :required => true %>
+    <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, :autofocus => true, :required => true %>
+    </div>
 
-<%= f.label :episodes %>
-<%= f.text_field :episodes %>
+    <div class="form-group">
+        <%= f.label :episodes %>
+        <%= f.text_field :episodes %>
+    </div>    
 
-<%= f.label :synopsis %>
-<%= f.text_field :synopsis %>
+    <div class="form-group">
+        <%= f.label :synopsis %>
+        <%= f.text_field :synopsis %>
+    </div>    
 
-<%= f.submit %>
+<%= f.submit "Create Saga", :class => 'btn btn-warning' %>
 
 
 <% end %>
