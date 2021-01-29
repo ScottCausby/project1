@@ -13,4 +13,5 @@ https://whispering-journey-57236.herokuapp.com/characters
 - Add login system
 - Request updatd,Creation or Deletion of Character, Saga or Voice Actor
 - Make the site allow the user to Delete, Update or Edit the characters that they have put on the site without request
+- Add a confirmation popup before Deletion
 
