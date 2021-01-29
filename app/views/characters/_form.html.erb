@@ -7,7 +7,7 @@
 
     <div class="form-group">
         <%= f.label :race %>
-        <%= f.text_field :race %>
+        <%= f.text_field :race, :class => 'form-control' %>
     </div>
 
     <div class="form-group">
@@ -17,7 +17,7 @@
 
     <div class="form-group">
         <%= f.label :saga_ids %>
-        <%= f.select :saga_ids, Saga.pluck(:title, :id), :class => 'form-control' %>
+        <%= f.select :saga_ids, Saga.pluck(:title, :id), :include_blank => true, :class => 'form-control' %>
     </div>
 
     <div class="form-group">    
