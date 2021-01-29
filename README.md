@@ -1,24 +1,16 @@
-# README
+### Project 1 (Dragon Ball Z CRUD)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Three Models that associate with eachother
+- Can create and edit Characters, Sagas and Voice Actors
+- Displayed on Heroku
 
-Things you may want to cover:
+I made this website using Rails and a style gem called Bootstrap.
 
-* Ruby version
+Here is the link my my site
+https://whispering-journey-57236.herokuapp.com/characters
 
-* System dependencies
+### Streach goals
+- Add login system
+- Request updatd,Creation or Deletion of Character, Saga or Voice Actor
+- Make the site allow the user to Delete, Update or Edit the characters that they have put on the site without request
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
