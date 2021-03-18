@@ -1,5 +1,7 @@
 ### Project 1 (Dragon Ball Z CRUD)
 
+### Ruby on Rails
+
 - Three Models that associate with eachother
 - Can create and edit Characters, Sagas and Voice Actors
 - Displayed on Heroku
